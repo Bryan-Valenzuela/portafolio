@@ -3,9 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://kit.fontawesome.com/c808aa3584.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header class="header" id="header">
+        <nav class="contenedor-nav">
+            <div class="navegacion">
+                <div class="hamburger">
+                    <div class="linea"></div>
+                    <div class="linea"></div>
+                    <div class="linea"></div>
+                </div>
+                <div class="logo">
+                    <div class="logo-img"></div>
+                    <h1>Bryan Valenzuela</h1>
+                </div>
+                <div class="nav-menu">
+                    <a class="link-header" href="#header">Inicio</a>
+                    <a class="link-menu" href="#sobre-mi">Sobre mi</a> 
+                    <a class="link-nosotros" href="#servicios">Servicios</a>
+                    <a class="link-nosotros" href="#proyectos">Proyectos</a>
+                    <a class="link-contacto" href="#contacto">Contactame</a>
+                </div>
+            </div>
+        </nav>
+        <div class="frase-header">
+            <h2>Hola soy <b>Bryan Valenzuela</b></h2><br>
+            <p>Soy Frontend developer</p>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+            var menu = document.querySelector(".contenedor-nav");
+            menu.classList.toggle("Stiky", window.scrollY > 400);
+        })
+        </script>
+    </header>
+
+    <!--sobre mi-->
+    <div class="contenedor-sobre-mi" id="sobre-mi">
+        <div class="sobre-mi">
+            <div class="titulo-sobre-mi">
+                <h3>Sobre mi</h3>
+            </div>
+            <div class="contenido-sobre-mi">
+                <div class="sobre-mi-texto">
+                    <p>Soy ingeniero en software, frontend developer y autodidacta, actualmente me encuentro capacitandome en desarrollo web para convertirme en un fullstack developer</p>
+                </div>
+                <div class="sobre-mi-img">
+                    <img src="recursos/img/WebDevelopment.svg" alt="Peperoni">
+                </div>
+            </div>
+            <div class="contenedor-habilidades">
+                <div class="habilidades-titulo">
+                    <h3>Habilidades</h3>
+                </div>
+                <div class="habilidades">
+
+                    <div class="carta">
+                        <div class="caja">
+                            <div class="porcentaje">
+                                <i class="fab fa-html5"></i>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="numero">
+                                    <h4>100 </h4><span>%</span>
+                                </div>
+                            </div>
+                            <h4 class="texto">HTML</h4>
+                        </div>
+                    </div>
+    
+                    <div class="carta">
+                        <div class="caja">
+                            <div class="porcentaje">
+                                <i class="fab fa-css3-alt"></i>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="numero">
+                                    <h4>95 </h4><span>%</span>
+                                </div>
+                            </div>
+                            <h4 class="texto">Css</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="carta">
+                        <div class="caja">
+                            <div class="porcentaje">
+                                <i class="fab fa-js-square"></i>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="numero">
+                                    <h4>60 </h4><span>%</span>
+                                </div>
+                            </div>
+                            <h4 class="texto">JavaScript</h4>
+                        </div>
+                    </div>
+    
+                    <div class="carta">
+                        <div class="caja">
+                            <div class="porcentaje">
+                                <i class="fab fa-git-alt"></i>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="numero">
+                                    <h4>80 </h4><span>%</span>
+                                </div>
+                            </div>
+                            <h4 class="texto">Git</h4>
+                        </div>
+                    </div>
+    
+                    <div class="carta">
+                        <div class="caja">
+                            <div class="porcentaje">
+                                <img src="recursos/img/estados-unidos.svg" alt="Ingles">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="numero">
+                                    <h4>B1</h4>
+                                </div>
+                            </div>
+                            <h4 class="texto">Ingles</h4>
+                        </div>
+                    </div>
+    
+                    <div class="carta">
+                        <div class="caja">
+                            <div class="porcentaje">
+                                <img src="recursos/img/mexico.svg" alt="Espaol">
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="numero">
+                                    <h4>Nativo</h4>
+                                </div>
+                            </div>
+                            <h4 class="texto">Español</h4>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            
+            <div class="contenedor-aprendiendo">
+                <div class="titulo-aprendiendo">
+                    <h3>Aprendiendo</h3>
+                </div>
+                <div class="aprendiendo-contenido">
+                    <div class="react"><i class="fab fa-react"></i></div>
+                    <div class="node"><i class="fab fa-node"></i></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     
 </body>
 </html>
