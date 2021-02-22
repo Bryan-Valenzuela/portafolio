@@ -6,6 +6,7 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/c808aa3584.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
 </head>
 <body>
     <header class="header" id="header">
@@ -118,7 +119,7 @@
                                     <circle cx="70" cy="70" r="70"></circle>
                                 </svg>
                                 <div class="numero">
-                                    <h4>80 </h4><span>%</span>
+                                    <h4>90 </h4><span>%</span>
                                 </div>
                             </div>
                             <h4 class="texto">Git</h4>
@@ -165,11 +166,72 @@
                     <h3>Aprendiendo</h3>
                 </div>
                 <div class="aprendiendo-contenido">
-                    <div class="react"><i class="fab fa-react"></i></div>
-                    <div class="node"><i class="fab fa-node"></i></div>
+                    <div class="react">
+                        <i class="fab fa-react"></i>
+                        <h4>React</h4>
+                    </div>
+                    <div class="node">
+                        <i class="fab fa-node"></i>
+                        <h4>Node</h4>
+                    </div>
                 </div>
             </div>
+            <script type="text/javascript">
+                VanillaTilt.init(document.querySelector(".react"), {
+                    max: 25,
+                    speed: 400,
+                    scale: 1.3,
+                });
+                VanillaTilt.init(document.querySelector(".node"), {
+                    max: 25,
+                    speed: 400,
+                    scale: 1.3
+                });                
+            </script>
+        </div>
+    </div>
 
+    <!-- servicios -->
+    <div class="contenedor-servicios" id="servicios">
+        <div class="servicios">
+            <div class="titulo-servicios">
+                <h3>Servicios</h3>
+            </div>
+            <div class="servicios-contenido">
+                <div class="caja-servicio s1">
+                    <div class="servicio-portada">
+                        <div class="servicio-portada-img">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="servicio-descripcion">
+                        <p>Su sitio será mostrado apropiadamente en cualquier dispositivo</p>
+                        <span><b>Full responsive</b></span>                      
+                    </div>
+                </div>
+                <div class="caja-servicio s2">
+                    <div class="servicio-portada">
+                        <div class="servicio-portada-img">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                    <div class="servicio-descripcion">
+                        <p>Diseño atractivo y creativo para su sitio web el cual es la cara de su negocio</p>
+                        <span><b>UI/UX</b></span>                      
+                    </div>
+                </div>
+                <div class="caja-servicio s3">
+                    <div class="servicio-portada">
+                        <div class="servicio-portada-img">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="servicio-descripcion">
+                        <p>Te ayudare a crear un sitio web que tus clientes amaran</p>
+                        <span><b>Desarrollo</b></span>                      
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
