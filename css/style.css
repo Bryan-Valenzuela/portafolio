@@ -19,7 +19,7 @@ body{
 
 .header {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../recursos/img/fondo-header.jpg');
@@ -33,18 +33,12 @@ body{
     align-items: center;    
 }
 
-nav{
-    width: 100vw;
-    height: 15vh;
-    margin: auto;
-}
-
 .contenedor-nav{
     display: flex;
     justify-content: center;
     align-content: center;    
     color: white;
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     z-index: 50;
     transition: 1s;
@@ -53,7 +47,7 @@ nav{
 
 .navegacion{
     display: grid;
-    width: 90vw;
+    width: 90%;
     height: 15vh;
     grid-template-areas: "logo menu";
     grid-template-columns: 1fr,1fr;
@@ -67,7 +61,7 @@ nav{
 .Stiky{
     padding: 0%;
     height: 7vh;
-    width: 100vw;
+    width: 100%;
     background-color: #051126;
     box-shadow: 1px 0px 11px 1px rgba(0,0,0,0.41);
     -webkit-box-shadow: 1px 0px 11px 1px rgba(0,0,0,0.41);
@@ -177,7 +171,7 @@ nav{
 
 .contenedor-sobre-mi{
     height: 2200px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -618,9 +612,10 @@ svg circle:nth-child(2) {
     color: #91c441;
 }
 
+/** servicios **/
 .contenedor-servicios{
     height: 810px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -628,7 +623,7 @@ svg circle:nth-child(2) {
 }
 
 .servicios{
-    width: 90vw;
+    width: 90%;
     height: 100%;
     display: grid;
     grid-template-areas: 
@@ -659,32 +654,19 @@ svg circle:nth-child(2) {
 .servicios-contenido{
     height: 600px;
     width: 100%;
-    display: grid;
-    grid-template-areas: "s1 s2 s3";
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr,1fr,1fr;
-    grid-gap: 5%;
+    display: flex;
+    flex-wrap: wrap;
     padding: 5%;
     background-color: #7c587f;
-    justify-content: center;
+    justify-content: space-around;
+    justify-items: center;
     align-items: center;
-}
-.s1{
-    grid-area: s1;
-}
-
-.s2{
-    grid-area: s2;
-}
-
-.s3{
-    grid-area: s3;
 }
 
 .caja-servicio{
     position: relative;
     height: 300px;
-    width: 25vw;
+    width: 25%;
     display: flex;
     flex-flow: column;
     justify-items: center;
@@ -764,6 +746,152 @@ svg circle:nth-child(2) {
 .caja-servicio:hover .servicio-descripcion {
     transform: translate(10%,22%);
 }
+
+/** proyectos **/
+
+.contenedor-proyectos{
+    height: 810px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.area-proyectos{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "proyectos"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 10%;
+    justify-content: center;
+    align-content: center;
+}
+
+.titulo-proyectos{
+    grid-area: titulo;
+    height: 100%;
+    width: 100%;
+}
+
+.titulo-proyectos h3{
+    text-align: center;
+    font-family: 'Yellowtail', cursive;
+    font-size: calc(5em + 1vw);
+    cursor:default;
+    color: #4c3f77;
+}
+
+.contenido-proyectos{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 3%;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.proyecto{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    background-color: #7c587f;
+    box-shadow: 1px 0px 11px 1px rgba(0,0,0,0.41);
+    
+}
+
+.img-proyecto{
+    height: 100%;
+    width: 100%;   
+    
+}
+
+.img-proyecto img{
+    position: relative;    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tech {
+    top: 5%;
+    left: 10%;
+    height: 20%;
+    flex-basis: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    z-index: 4;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.tech i{
+    height: 100%;
+    width: 100%;
+    font-size: calc(1.3rem + 1vw);
+    margin-left: 15%;
+}
+                            
+.tech .fa-html5 {
+    color: #fe7d14;
+}
+.tech .fa-css3-alt {
+    color: #4e6ef5;
+}
+.tech .fa-js-square {
+    color: #f7df1e;
+}
+
+.descripcion-proyecto{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+    color: #051126;
+    padding: 2%;
+}
+
+.descripcion-proyecto span{
+    font-size: calc(.8em + 1vw);
+    cursor: default;
+}
+
+.descripcion-proyecto a{
+    font-size: calc(.5em + 1vw);
+    text-decoration: none;
+    color: #a4bcbc;
+}
+
+.proyecto:hover .tech{
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .linea {
