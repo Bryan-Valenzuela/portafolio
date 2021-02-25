@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/c808aa3584.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header" id="header">
@@ -23,9 +26,9 @@
                 </div>
                 <div class="nav-menu">
                     <a class="link-header" href="#header">Inicio</a>
-                    <a class="link-menu" href="#sobre-mi">Sobre mi</a> 
-                    <a class="link-nosotros" href="#servicios">Servicios</a>
-                    <a class="link-nosotros" href="#proyectos">Proyectos</a>
+                    <a class="link-sobre-mi" href="#sobre-mi">Sobre mi</a> 
+                    <a class="link-servicios" href="#servicios">Servicios</a>
+                    <a class="link-proyectos" href="#proyectos">Proyectos</a>
                     <a class="link-contacto" href="#contacto">Contactame</a>
                 </div>
             </div>
@@ -300,6 +303,57 @@
                 </script>
             </div>
         </div>
+    </div>
+
+    <!-- contacto -->
+    <div class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <div class="titulo-contacto">
+                <h3>Contactame</h3>
+            </div>
+            <div class="contenedor-formulario">
+                <div class="iconos-contacto">
+                    <div class="iconos-logo">
+                        <img src="recursos/img/LogoBlanco.svg" alt="Peperoni">
+                    </div>
+                    <div class="iconos">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <form class="contenedor-inputs" method="POST" action="" id="formulario">
+                        <div class="contenedor-input">
+                            <input type="text" id="nombre" >
+                            <span>Nombre</span> 
+                        </div>
+                        <div class="contenedor-input">
+                            <input type="text" id="asunto" >
+                            <span>Asunto</span>
+                        </div>
+                        <div class="contenedor-input">
+                            <input type="email" id="correo" >
+                            <span>Correo</span>
+                        </div>
+                        <div class="contenedor-mensaje" >
+                            <textarea type="textarea" rows="10" cols="50" id="mensaje"></textarea>
+                            <span>Descripcion del mensaje</span>
+                        </div>
+                        <div class="contenedor-boton">
+                            <button type="submit" id="boton-form"> Enviar </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <span>Creado con <i class="fas fa-heart"></i> por <b>Bryan Valenzuela</b></span>
+        <span>2021 Ⓒ Todos los derechos reservados.</span>
     </div>
     
 </body>
