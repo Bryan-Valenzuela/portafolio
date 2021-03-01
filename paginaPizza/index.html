@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaStyle</title>
+    <link rel="icon" type="image/svg" href="recursos/img/LogoBlanco.svg" >
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+    
+</head>
+<body>
+    <!--header-->
+    <header id="header">
+        <nav class="Contenedor-nav">
+            <div class="hamburger">
+                <div class="linea"></div>
+                <div class="linea"></div>
+                <div class="linea"></div>
+            </div>
+            <div class="logo">
+                <div class="logo-img"></div>
+                <h1>PizzaStyle</h1>
+            </div>
+            <div class="nav-menu">
+                <a class="link-header" href="#header">Inicio</a>
+                <a class="link-menu" href="#contenedorMenu">Nuestro menu</a> 
+                <a class="link-nosotros" href="#sobreNosotros">Sobre nosotros</a>
+                <a class="link-contacto" href="#contacto">Contactanos</a>
+            </div>
+        </nav>
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+            var menu = document.querySelector(".Contenedor-nav");
+            menu.classList.toggle("Stiky", window.scrollY > 400);
+})
+        </script>
+        <div class="frase-header">
+            <h2>
+                Come lo que te haga feliz 
+            </h2>            
+        </div>
+    </header>
+    <!--menu-->
+    <div class="contenedor-menu" id="contenedorMenu">
+        <!--columna 1-->
+        <div class="grid-menu">
+            <!--contenido-->
+            <div class="caja-menu ing1">
+                <div class="img-caja">
+                    <img src="recursos/img/pizza-peperoni.jpg" alt="Peperoni">
+                </div>
+                <div class="contenido-caja">
+                    <h3>
+                        Clasica
+                    </h3>
+                    <label>
+                        - Peperoni
+                    </label>
+                </div>
+            </div>
+            <div class="caja-menu ing2">
+                <div class="img-caja">
+                    <img src="recursos/img/pizza-jamon.jpg" alt="Jamon">
+                </div>
+                <div class="contenido-caja">
+                    <h3>
+                        Jamón ahumado
+                    </h3>
+                    <label>                        
+                        - Jamón
+                    </label>
+                </div>
+            </div>
+            <div class="caja-menu ing3">
+                <div class="img-caja">
+                    <img src="recursos/img/pizza-queso-chile-champinon.jpg" alt="Queso vegana">
+                </div>
+                <div class="contenido-caja">
+                    <h3>
+                        Queso vegano
+                    </h3>
+                    <ul>
+                        <li>- Queso</li>
+                        <li>- Chile</li>
+                        <li>- Champiñon</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="caja-menu ing4">
+                <div class="img-caja">
+                    <img src="recursos/img/pizza-vegana.jpg" alt="Vegana">
+                </div>
+                <div class="contenido-caja">
+                    <h3>
+                        Vegana
+                    </h3>
+                    <ul>
+                        <li>- Queso vegano</li>
+                        <li>- Tomate</li>
+                        <li>- Aceituna</li>
+                        <li>- Champiñon</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--titulo-->
+        <div class="titulo-menu">
+            <h3>Menú</h3>
+        </div>
+        <!--columna 2-->
+        <div class="menu-img">
+            <div class="contenedor-img">
+                <img src="recursos/img/ingredientes.jpg" alt="Ingredientes">
+            </div>
+        </div>
+    </div>
+
+    <!--sobre nosotros-->
+    <div class="contenedor-sobre-nosotros" id="sobreNosotros">
+        <div class="sobre-nosotros-titulo">
+            <h3>Sobre nosotros</h3>
+        </div>
+        <div class="sobre-nosotros-img">
+            <img src="recursos/img/aboutus.jpg" alt="Sobre nosotros">
+        </div>
+        <div class="sobre-nosotros-contenido">
+            <p><b>PizzaStyle</b> nace del deseo de dos jóvenes soñadores, con ganas de salir adelante y preparar la mejor pizza de México, con muchos obstáculos en una época de crisis económica estos dos soñadores se dispusieron a trabajar de sol a sol, trabajar sin descanso para brindar la mejor pizza.<br><br>
+            Estos soñadores alcanzaron un ideal, que comenzó como un anhelo y que ahora se ha convertido en un presente exitoso, en el que los corazones de este equipo siempre están presentes.  Por eso nosotros <b>PizzaStyle</b> trabajamos con todo el amor para nuestros clientes porque sin ellos no seríamos lo que somos ahora.<br><br>
+            ¡En <b>PizzaStyle</b> el trabajo duro es constante porque brindar la mejor pizza de México! ¡lo vale!  con cada bocado, con cada sabor nuestros clientes se sumergirán en estos 30 años de enseñanzas y crearán recuerdos inigualables y experiencias únicas.<br><br>
+            Gracias por preferirnos y ser parte de esta hermosa familia.</p>
+        </div>
+    </div>
+
+    <!-- contactanos -->
+    <div class="contenedor-contactanos" id="contacto">
+        <div class="contactanos-titulo">
+            <h3>Contactanos</h3>
+        </div>
+        <div class="contactanos-form">
+            <form class="contenedor-inputs" method="POST" action="" id="formulario">
+                <div class="contenedor-input">
+                    <input type="text" id="nombre" required>
+                    <span>Nombre</span> 
+                </div>
+                <div class="contenedor-input">
+                    <input type="text" id="asunto" required>
+                    <span>Asunto</span>
+                </div>
+                <div class="contenedor-input">
+                    <input type="email" id="correo" required>
+                    <span>Correo</span>
+                </div>
+                <div class="contenedor-mensaje" required>
+                    <textarea type="textarea" rows="10" cols="50" id="mensaje"></textarea>
+                    <span >Descripción del mensaje</span>
+                </div>
+                <div class="contenedor-boton">
+                    <button type="submit" id="boton-form"> Enviar </button>
+                </div>
+            </form>
+        </div>
+        <div class="contactanos-img">
+            <img src="recursos/img/email.svg" alt="Sobre nosotros">
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div><h4><b>PizzaStyle </b></h4></div>
+    </div>
+</body>
+</html>

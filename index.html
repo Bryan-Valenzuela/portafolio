@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Bryan Valenzuela</title>
+    <link rel="icon" type="image/svg" href="recursos/img/LogoBlanco.svg" >
     <link rel="stylesheet" href="css/style.css"/>
     <script src="https://kit.fontawesome.com/c808aa3584.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="js/script.js" defer></script>
+    <script src="js/anime.min.js"></script>
 </head>
 <body>
     <header class="header" id="header">
         <nav class="contenedor-nav">
             <div class="navegacion">
-                <div class="hamburger">
-                    <div class="linea"></div>
-                    <div class="linea"></div>
-                    <div class="linea"></div>
+                <div class="btn-menu">
+                    <div class="hamburguesa"></div>
                 </div>
                 <div class="logo">
                     <div class="logo-img"></div>
@@ -30,12 +29,16 @@
                     <a class="link-servicios" href="#servicios">Servicios</a>
                     <a class="link-proyectos" href="#proyectos">Proyectos</a>
                     <a class="link-contacto" href="#contacto">Contactame</a>
+                    <div class="idiomas">
+                        <div class="idiomaEN"><img class="EN" src="recursos/img/estados-unidos.svg" alt="Ingles"></div>
+                        <div class="idiomaES activo"><img class="ES" src="recursos/img/mexico.svg" alt="Espaol"></div>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="frase-header">
-            <h2>Hola soy <b>Bryan Valenzuela</b></h2><br>
-            <p>Soy Frontend developer</p>
+            <div><h2 class="hola_land">Hola soy </h2><b>Bryan Valenzuela</b></div><br>
+            <p class="soy soy_land">Soy Frontend developer</p>
         </div>
         <script type="text/javascript">
             window.addEventListener("scroll",function(){
@@ -49,11 +52,11 @@
     <div class="contenedor-sobre-mi" id="sobre-mi">
         <div class="sobre-mi">
             <div class="titulo-sobre-mi">
-                <h3>Sobre mi</h3>
+                <h3 class="titulo_sobre">Sobre mi</h3>
             </div>
             <div class="contenido-sobre-mi">
                 <div class="sobre-mi-texto">
-                    <p>Soy ingeniero en software, frontend developer y autodidacta, actualmente me encuentro capacitandome en desarrollo web para convertirme en un fullstack developer</p>
+                    <p class="texto_sobre">Soy ingeniero en software, frontend developer y autodidacta, actualmente me encuentro capacitandome en desarrollo web para convertirme en un fullstack developer</p>
                 </div>
                 <div class="sobre-mi-img">
                     <img src="recursos/img/WebDevelopment.svg" alt="Peperoni">
@@ -61,11 +64,11 @@
             </div>
             <div class="contenedor-habilidades">
                 <div class="habilidades-titulo">
-                    <h3>Habilidades</h3>
+                    <h3 class="titulo_habilidades">Habilidades</h3>
                 </div>
                 <div class="habilidades">
 
-                    <div class="carta">
+                    <div class="carta phtml">
                         <div class="caja">
                             <div class="porcentaje">
                                 <i class="fab fa-html5"></i>
@@ -74,14 +77,14 @@
                                     <circle cx="70" cy="70" r="70"></circle>
                                 </svg>
                                 <div class="numero">
-                                    <h4>100 </h4><span>%</span>
+                                    <h4 class="NPHtml">100</h4><span> %</span>
                                 </div>
                             </div>
                             <h4 class="texto">HTML</h4>
                         </div>
                     </div>
     
-                    <div class="carta">
+                    <div class="carta pcss">
                         <div class="caja">
                             <div class="porcentaje">
                                 <i class="fab fa-css3-alt"></i>
@@ -90,14 +93,14 @@
                                     <circle cx="70" cy="70" r="70"></circle>
                                 </svg>
                                 <div class="numero">
-                                    <h4>95 </h4><span>%</span>
+                                    <h4 class="NPCss" >95</h4><span> %</span>
                                 </div>
                             </div>
                             <h4 class="texto">Css</h4>
                         </div>
                     </div>
                     
-                    <div class="carta">
+                    <div class="carta pjs">
                         <div class="caja">
                             <div class="porcentaje">
                                 <i class="fab fa-js-square"></i>
@@ -106,14 +109,14 @@
                                     <circle cx="70" cy="70" r="70"></circle>
                                 </svg>
                                 <div class="numero">
-                                    <h4>60 </h4><span>%</span>
+                                    <h4 class="NPJs">60</h4><span> %</span>
                                 </div>
                             </div>
                             <h4 class="texto">JavaScript</h4>
                         </div>
                     </div>
     
-                    <div class="carta">
+                    <div class="carta pgit">
                         <div class="caja">
                             <div class="porcentaje">
                                 <i class="fab fa-git-alt"></i>
@@ -122,7 +125,7 @@
                                     <circle cx="70" cy="70" r="70"></circle>
                                 </svg>
                                 <div class="numero">
-                                    <h4>90 </h4><span>%</span>
+                                    <h4 class="NPGit">90</h4><span> %</span>
                                 </div>
                             </div>
                             <h4 class="texto">Git</h4>
@@ -141,7 +144,7 @@
                                     <h4>B1</h4>
                                 </div>
                             </div>
-                            <h4 class="texto">Ingles</h4>
+                            <h4 class="texto habilidad_EN">Ingles</h4>
                         </div>
                     </div>
     
@@ -154,10 +157,10 @@
                                     <circle cx="70" cy="70" r="70"></circle>
                                 </svg>
                                 <div class="numero">
-                                    <h4>Nativo</h4>
+                                    <h4 class="habilidad_nativo">Nativo</h4>
                                 </div>
                             </div>
-                            <h4 class="texto">Español</h4>
+                            <h4 class="texto hablidad_ES">Español</h4>
                         </div>
                     </div>
     
@@ -166,7 +169,7 @@
             
             <div class="contenedor-aprendiendo">
                 <div class="titulo-aprendiendo">
-                    <h3>Aprendiendo</h3>
+                    <h3 class="titulo_aprendiendo">Aprendiendo</h3>
                 </div>
                 <div class="aprendiendo-contenido">
                     <div class="react">
@@ -198,7 +201,7 @@
     <div class="contenedor-servicios" id="servicios">
         <div class="servicios">
             <div class="titulo-servicios">
-                <h3>Servicios</h3>
+                <h3 class="titulo_servicios">Servicios</h3>
             </div>
             <div class="servicios-contenido">
                 <div class="caja-servicio s1">
@@ -208,8 +211,8 @@
                         </div>
                     </div>
                     <div class="servicio-descripcion">
-                        <p>Su sitio será mostrado apropiadamente en cualquier dispositivo</p>
-                        <span><b>Full responsive</b></span>                      
+                        <p class="servicioFRC">Su sitio será mostrado apropiadamente en cualquier dispositivo</p>
+                        <span><b class="servicioFRT">Full responsive</b></span>                      
                     </div>
                 </div>
                 <div class="caja-servicio s2">
@@ -219,8 +222,8 @@
                         </div>
                     </div>
                     <div class="servicio-descripcion">
-                        <p>Diseño atractivo y creativo para su sitio web el cual es la cara de su negocio</p>
-                        <span><b>UI/UX</b></span>                      
+                        <p class="servicioDC">Diseño atractivo y creativo para su sitio web el cual es la cara de su negocio</p>
+                        <span><b class="servicioDT">UI/UX</b></span>                      
                     </div>
                 </div>
                 <div class="caja-servicio s3">
@@ -230,8 +233,8 @@
                         </div>
                     </div>
                     <div class="servicio-descripcion">
-                        <p>Te ayudare a crear un sitio web que tus clientes amaran</p>
-                        <span><b>Desarrollo</b></span>                      
+                        <p class="servicioDev">Te ayudare a crear un sitio web que tus clientes amarán</p>
+                        <span><b class="servicioDevT">Desarrollo</b></span>                      
                     </div>
                 </div>
             </div>
@@ -242,7 +245,7 @@
     <div class="contenedor-proyectos" id="proyectos">
         <div class="area-proyectos">
             <div class="titulo-proyectos">
-                <h3>Proyectos</h3>
+                <h3 class="titulo_proyectos">Proyectos</h3>
             </div>
             <div class="contenido-proyectos">
                 <div class="proyecto">
@@ -255,8 +258,8 @@
                         <img src="recursos/img/portafolio.JPG" alt="Portafolio">
                     </div>
                     <div class="descripcion-proyecto">
-                           <span>Portafolio</span>
-                            <a href="#header">Ver proyecto</a> 
+                           <span class="proyecto1">Portafolio</span>
+                            <a href="#header" class="ver">Ver proyecto</a> 
                     </div>
                 </div>
 
@@ -271,7 +274,7 @@
                     </div>
                     <div class="descripcion-proyecto">
                            <span>PizzaStyle</span>
-                            <a href="#header">Ver proyecto</a> 
+                            <a href="file:///C:/Users/bryan/Desktop/Portafolio/portafolio/paginaPizza/index.html" class="ver">Ver proyecto</a> 
                     </div>
                 </div>
 
@@ -285,8 +288,8 @@
                         <img src="recursos/img/trivia.JPG" alt="Portafolio">
                     </div>
                     <div class="descripcion-proyecto">
-                           <span>Trivia</span>
-                            <a href="#header">Ver proyecto</a> 
+                           <span class="proyecto3">Trivia</span>
+                            <a href="file:///C:/Users/bryan/Desktop/Portafolio/portafolio/trivia/index.html" class="ver">Ver proyecto</a> 
                     </div>
                 </div>
                 
@@ -309,38 +312,38 @@
     <div class="contacto" id="contacto">
         <div class="contenedor-contacto">
             <div class="titulo-contacto">
-                <h3>Contactame</h3>
+                <h3 class="titulo_contactame">Contactame</h3>
             </div>
             <div class="contenedor-formulario">
                 <div class="iconos-contacto">
                     <div class="iconos-logo">
-                        <img src="recursos/img/LogoBlanco.svg" alt="Peperoni">
+                        <img src="recursos/img/LogoBlanco.svg" alt="Logo">
                     </div>
                     <div class="iconos">
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-github"></i>
+                        <a href="https://www.linkedin.com/in/bryan-valenzuela-091656206"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Bryan-Valenzuela"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="formulario">
                     <form class="contenedor-inputs" method="POST" action="" id="formulario">
                         <div class="contenedor-input">
-                            <input type="text" id="nombre" >
-                            <span>Nombre</span> 
+                            <input type="text" id="nombre" required>
+                            <span class="campo_nombre">Nombre</span> 
                         </div>
                         <div class="contenedor-input">
-                            <input type="text" id="asunto" >
-                            <span>Asunto</span>
+                            <input type="text" id="asunto" required>
+                            <span class="campo_asunto">Asunto</span>
                         </div>
                         <div class="contenedor-input">
-                            <input type="email" id="correo" >
-                            <span>Correo</span>
+                            <input type="email" id="correo" required>
+                            <span class="campo_correo">Correo</span>
                         </div>
-                        <div class="contenedor-mensaje" >
+                        <div class="contenedor-mensaje" required>
                             <textarea type="textarea" rows="10" cols="50" id="mensaje"></textarea>
-                            <span>Descripcion del mensaje</span>
+                            <span class="campo_mensaje">Descripción del mensaje</span>
                         </div>
                         <div class="contenedor-boton">
-                            <button type="submit" id="boton-form"> Enviar </button>
+                            <button type="submit" id="formularioES" class="btn_enviar"> Enviar </button>
                         </div>
                     </form>
 
@@ -352,9 +355,11 @@
     <!-- footer -->
 
     <div class="footer">
-        <span>Creado con <i class="fas fa-heart"></i> por <b>Bryan Valenzuela</b></span>
-        <span>2021 Ⓒ Todos los derechos reservados.</span>
+        <div><span class="creado">Creado con </span><i class="fas fa-heart"></i> <span class="por">por</span> <b>Bryan Valenzuela</b></div>
+        <span class="c">2021 Ⓒ Todos los derechos reservados.</span>
     </div>
+
+    <script src="js/script.js" defer></script>
     
 </body>
 </html>
