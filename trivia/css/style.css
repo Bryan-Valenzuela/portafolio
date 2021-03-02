@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -11,39 +13,28 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
     height: 100vh;
 }
 
 .contenedor-preguntas {
-    display: grid;
-    border-radius: 10px;
-    overflow: hidden;
+    display: flex;
+    justify-items: center;
+    align-items: center;
     height: 92vh; 
     width:  90%;
 }
 
 .titulo-preguntas {
-    grid-template-areas: 
-    "pregunta"
-    "respuesta"
-    "respuesta"
-    "boton";
+    display: flex;
     background-color: rgba(247, 236, 250, 0.8);
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.4);
     height: 100%; 
     width:  100%;
-    backdrop-filter: blur(5px);
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    
+    flex-flow: column;
+    border-radius: 10px;
 }
 
 .pregunta {
-    grid-area: pregunta;
     display: flex;
     width: 100%;
     height: 40%;
@@ -52,28 +43,27 @@ body {
 }
 
 .pregunta h2 {   
-    padding: 1em;
+    padding: 3%;
     color: #2469a0;
     text-align: center;
     font-size: calc(.8em + 1vw);
-    margin: 0;
     max-width: 100%;
     max-height: 100%;
 }
 
 .respuestas { 
-    grid-area: respuesta;
     width: 100%;
     height: 47%;
-    padding: 1rem 2em;
+    padding: 4% 2%;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .respuestas div{
-    margin-top: 10px;
-    min-width: 300px;
-    min-height: 50px;
+    margin: auto;
+    width: 40%;
+    height: 40%;
     border:2px solid #2469a0;;
     border-radius: 10px; 
     display: flex;
@@ -89,11 +79,14 @@ body {
     cursor: pointer;
     color: #2469a0;;
     font-size: calc(.83em + 1vw);
-    height: 57px;
+    height: 100%;
     width: 100%;
+    border-radius: 10px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: .7em 0;
-    
+    padding: 2%;
 }
 
 .respuestas div label ::before{
@@ -106,7 +99,6 @@ body {
 }
 
 .boton {
-    grid-area: boton;
     display: flex;
     width: 100%;
     height: 13%;
@@ -121,11 +113,12 @@ body {
     color: white;
     cursor: pointer;
     display: flex;
-    font-family: "Poppins", sans-serif;
     font-size: calc(1em + 1vw);
     justify-content: center;
     align-items: center;
-    padding: 1.3rem;
+    padding: 2%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .boton button:hover {
@@ -139,36 +132,25 @@ body {
 
 .pantalla-reinicio{
     display: flex;
-    flex-wrap: wrap;
     flex-flow: column;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.4);
-    overflow: hidden;
     height: 60vh; 
     width:  90%;
     background-color:  rgba(247, 236, 250, 0.8);;
-    backdrop-filter: blur(5px);
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
     margin: auto;
 }
 .reinicio{
     width: 100%;
     height: 100%;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
 }
 
 .reinicio h2 {   
     display: flex;
-    padding: 1em;
+    padding: 3%;
     text-align: center;
     color: #2469a0;;
     font-size: calc(1.5em + 1vw);
-    margin: 0;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -176,11 +158,8 @@ body {
 }
 
 .boton-reinicio {
-    display: flex;
     width: 100%;
-    height: 13%;
-    margin-bottom: 0;
-    align-self: baseline;
+    height: 20%;
     margin-bottom: 0;
 }
 
@@ -192,11 +171,12 @@ body {
     color: white;
     cursor: pointer;
     display: flex;
-    font-family: "Poppins", sans-serif;
-    font-size: calc(.83em + 1vw);
+    font-size: calc(1em + 1vw);
     justify-content: center;
     align-items: center;
-    padding: 1.3rem;
+    padding: 2%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .boton-reinicio button:hover {
@@ -208,90 +188,68 @@ body {
     outline: none;
 }
 
-@media screen and (min-width: 768px) {
-
-
-    .pregunta h2 {   
-        padding: 2em;
+@media screen and (max-width: 1024px){
+    .pregunta h2 {
         font-size: calc(1em + 1vw);
     }
-
-    .respuestas { 
-        padding: 3rem;
+    
+    .respuestas{
+        flex-flow: column;
     }
 
-    .respuestas div{
-        margin-top: 20px;
-        min-width: 600px;
-        min-height: 60px;
+    .respuestas div {
+        width: 90%;
+        height: 20%;
     }
+
     .respuestas div label {
-        
         font-size: calc(1em + 1vw);
-        height: 60px;
-        padding: .5em 0;
     }
 
-    .boton button {
-        font-size: calc(2em + 1vw);
-        padding: 1.3rem;
+    .boton button{
+        font-size: calc(1.8em + 1vw);
     }
-
-    .reinicio h2 {   
-        padding: 2em;
+    
+    .reinicio h2{
         font-size: calc(2em + 1vw);
+    }
+    
+    .boton-reinicio {
+        height: 25%;
     }
 
     .boton-reinicio button {
-        font-size: calc(2em + 1vw);
-        padding: 1.3rem;
+        font-size: calc(2.5em + 1vw);
     }
 
 }
 
-@media screen and (min-width: 1080px){
-
-    .pregunta {
-        height: 30%;
-    }
+@media screen and (max-width: 414px){
 
     .pregunta h2 {
-        padding: 1em 1.5em;
-        font-size: calc(.65em + 1vw);
+        font-size: calc(.69em + 1vw);
+        padding: 4%;
     }
-
-    .respuestas { 
-        padding: 1em 3rem;
-        height: 57%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .respuestas div{
-        margin-top: 10px;
-        max-width: 400px;
-        min-height: 50px;
     
+    .respuestas{
+        flex-flow: column;
     }
+
     .respuestas div label {
-        
-        font-size: calc(.5em + 1vw);
-        height: 50px;
-        padding: .4em 0;
+        font-size: calc(.7em + 1vw);
     }
 
-    .boton button {
-        font-size: calc(2em + 1vw);
-        padding: 1.3rem;
+    .boton button{
+        font-size: calc(1.6em + 1vw);
     }
 
-    .reinicio h2 {   
-        padding: 2em;
-        font-size: calc(2em + 1vw);
+    .reinicio h2{
+        padding: 5%;
+        font-size: calc(1.6em + 1vw);
     }
 
     .boton-reinicio button {
-        font-size: calc(1em + 1vw);
-        padding: 1.3rem;
+        font-size: calc(1.8em + 1vw);
     }
+
 }
