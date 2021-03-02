@@ -1800,16 +1800,16 @@ h3{
     
     
     .footer span{
-        font-size: calc(1em + 1vw);
+        font-size: calc(.7em + 1vw);
     }
     
     .footer i{
         color: #E6435B;
-        font-size: calc(1em + 1vw);
+        font-size: calc(.9em + 1vw);
     }
     
     .footer b{
         font-family: 'Yellowtail', cursive;
-        font-size: calc(1.5em + 1vw);
+        font-size: calc(1.1em + 1vw);
     }
 }

@@ -471,7 +471,7 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{2,100}$/, // Letras y espacios, pueden llevar acentos.
   asunto: /^[a-zA-ZÀ-ÿ0-9\s]{2,100}$/, // Letras y espacios, pueden llevar acentos, numeros.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-  texto: /^[a-zA-ZÀ-ÿ0-9\_\-\.\,\:\;\(\)\/\"\=\¿\?\!]+$/, // Letras, numeros, guion y guion_bajo
+  texto: /^[a-zA-ZÀ-ÿ0-9\_\-\.\,\:\;\(\)\/\"\=\¿\?\!\s]+$/, // Letras, numeros, guion y guion_bajo
 }
 
 form.addEventListener('submit', evt => {
@@ -520,10 +520,10 @@ form.addEventListener('submit', evt => {
                   }else{
                     Email.send({
                       Host :"smtp.gmail.com",
-                      Username : "correopruebaemails@gmail.com",
-                      Password : "1q2w3e4r_",
-                      To : 'correopruebaemails@gmail.com',
-                      From : "correopruebaemails@gmail.com",
+                      Username : "paginascorreos1@gmail.com",
+                      Password : "1qw2azxs3ER4DCVF_",
+                      To : 'bryanavilav@gmail.com',
+                      From : "paginascorreos1@gmail.com",
                       Subject : "Correo Portafolio",
                       Body : " Nombre: "+nombre.value+", <br>Correo: "+correo.value+", <br>Asunto: "+asunto.value+", <br>Mensaje: "+mensaje.value,
                       }).then(

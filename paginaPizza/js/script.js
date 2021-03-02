@@ -50,10 +50,10 @@ form.addEventListener('submit', evt => {
                 }else{
                   Email.send({
                     Host :"smtp.gmail.com",
-                    Username : "correopruebaemails@gmail.com",
-                    Password : "1q2w3e4r_",
-                    To : 'correopruebaemails@gmail.com',
-                    From : "correopruebaemails@gmail.com",
+                    Username : "paginascorreos1@gmail.com",
+                    Password : "1qw2azxs3ER4DCVF_",
+                    To : 'bryanavilav@gmail.com',
+                    From : "paginascorreos1@gmail.com",
                     Subject : "Correo PizzaStyle",
                     Body : " Nombre: "+nombre.value+", <br>Correo: "+correo.value+", <br>Asunto: "+asunto.value+", <br>Mensaje: "+mensaje.value,
                     }).then(
