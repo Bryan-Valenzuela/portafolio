@@ -17,6 +17,15 @@ body{
 
 }
 
+h3{
+    text-align: center;
+    font-family: 'Yellowtail', cursive;
+    font-size: calc(5em + 1vw);
+    cursor:default;
+    color: #4c3f77;
+}
+
+
 .header {
     height: 100vh;
     width: 100%;
@@ -490,14 +499,6 @@ svg circle:nth-child(2) {
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     transition: 2s;
-}
-
-h3{
-    text-align: center;
-    font-family: 'Yellowtail', cursive;
-    font-size: calc(5em + 1vw);
-    cursor:default;
-    color: #4c3f77;
 }
 
 .carta:hover:nth-child(1) svg circle:nth-child(2){
@@ -1570,15 +1571,20 @@ h3{
 
 @media screen and (max-width: 414px) {
     
+    h3{
+        font-size: calc(4em + 1vw);
+    }
+    
+
     .btn-menu {
-        left: 10%;
-        top: 20%;
-        width: 70px;
-        height: 70px;
+        left: 20%;
+        top: 35%;
+        width: 35px;
+        height: 35px;
     }
   
     .nav-menu {
-        clip-path: circle(5px at 86% 8%);
+        clip-path: circle(5px at 87% 8%);
     }
 
     .logo{
@@ -1586,18 +1592,18 @@ h3{
     }
 
     .logo h1{
-        font-size: calc(1.5rem + 1vw);
+        font-size: calc(1.2rem + 1vw);
         margin-left: 10%;
     }
 
     .hamburguesa{
-        width: 40px;
+        width: 35px;
         height: 4px;
     }
 
     .hamburguesa::before,
     .hamburguesa::after {        
-        width: 40px;
+        width: 35px;
         height: 4px;
     }
     .hamburguesa::before {
@@ -1619,16 +1625,16 @@ h3{
     }
     
     .frase-header h2 {
-        font-size: calc(1em + 1vw);
+        font-size: calc(.9em + 1vw);
         width: 40%;
     }
     
     .frase-header b {
-        font-size: calc(1.8em + 1vw);
+        font-size: calc(1.6em + 1vw);
     }
     
     .frase-header p {
-        font-size: calc(1em + 1vw);
+        font-size: calc(.9em + 1vw);
     }
     
     .frase-headerEN h2{
@@ -1651,7 +1657,7 @@ h3{
     }
     
     .Stiky .navegacion .logo h1{
-        font-size: calc(1.3em + 1vw);
+        font-size: calc(1.1em + 1vw);
         margin-left: 13%;
     }
     
@@ -1661,7 +1667,7 @@ h3{
 
     .Stiky .btn-menu {
         left: 10%;
-        top: 5%;
+        top: 25%;
     }
 
 
@@ -1711,6 +1717,15 @@ h3{
         height: 200px;
     }
 
+
+    .contenedor-aprendiendo {
+        height: 100%;
+        grid-gap: 5%;
+    }
+
+    .aprendiendo-contenido{
+        flex-flow: column;
+    }
 
     .servicios{
         grid-gap: 5%;

@@ -47,7 +47,7 @@ const preguntas = [
         c: "Ecuador",
         d: "Aun no le crecerán los dientes",
         correcta: "b",
-        retro: "no es necesario conocer cuándo les crecen los dientes a los niños ni hacer ningún tipo de cálculo. Los dientes le crecen en la boca",
+        retro: "no es necesario conocer cuando les crecen los dientes a los niños ni hacer ningún tipo de cálculo. Los dientes le crecen en la boca",
     },
     {
         Pregunta: "5. Estás corriendo en una carrera y adelantas a la persona que está en segundo lugar, ¿en qué posición pasas a estar?",

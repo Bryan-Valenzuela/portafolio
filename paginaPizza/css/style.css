@@ -566,7 +566,7 @@ display: flex;
         width: 100%;
         flex-direction: column;
         clip-path: circle(100px at 90% -10%);
-        transition: all 1s ease-out;
+        transition: all 1s ease-in-out;
         pointer-events: none;
         justify-content: space-around;
     }
@@ -590,7 +590,8 @@ display: flex;
       transition: all 0.5s ease 0.8s;
     }
     .nav-menu.abierto {
-        clip-path: circle(1500px at 90% -10%);
+       clip-path: circle(1500px at 90% -10%);
+       visibility: visible;
        pointer-events: all;
     }
 
@@ -776,7 +777,8 @@ display: flex;
         padding-top: 0%;
     }
     .nav-menu {
-        clip-path: circle(150px at 100% -20%);
+        clip-path: circle(5px at 89% 7%);
+        visibility: hidden;
     }
 
     .logo h1{
