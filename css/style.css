@@ -1222,7 +1222,8 @@ svg circle:nth-child(2) {
         /* border: 3px solid #fff; */
     }
   
-    .nav-menu {
+    .nav-menu,
+    .Stiky .nav-menu {
         position: fixed;
         background: #4c3f77;
         height: 100vh;
@@ -1309,7 +1310,9 @@ svg circle:nth-child(2) {
         transition: all 0.5s ease 1s;
       }
 
-    .nav-menu.abierto {
+    
+    .nav-menu.abierto, 
+    .Stiky .nav-menu.abierto {
         visibility: visible;
         clip-path: circle(1500px at 90% -10%);
         pointer-events: all;
@@ -1374,6 +1377,10 @@ svg circle:nth-child(2) {
     .Stiky .btn-menu {
         left: 50%;
         top: 0%;
+    }
+
+    .Stiky .nav-menu {
+        clip-path: circle(5px at 89% 4%);
     }
 
     .sobre-mi{
@@ -1612,10 +1619,13 @@ svg circle:nth-child(2) {
     .hamburguesa::after {
         transform: translateY(10px);
     }
-
   
     .nav-menu a.fade {
         font-size: calc(1.7em + 1vw);
+    }
+
+    .Stiky .nav-menu {
+        clip-path: circle(3px at 85% 5%);
     }
 
     .frase-header{

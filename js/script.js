@@ -167,6 +167,8 @@ btnIdiomaES.addEventListener('click', ()=> {
 
   frase.classList.remove('frase-headerEN');
 
+  cerrarMenu();
+
 });
 
 
@@ -219,6 +221,8 @@ btnIdiomaEN.addEventListener('click', ()=> {
   
   frase.classList.add('frase-headerEN');
 
+  cerrarMenu();
+
 });
 
  
@@ -264,49 +268,40 @@ const linkServicios = document.querySelector(".link-servicios");
 const linkProyectos = document.querySelector(".link-proyectos");
 const linkContacto = document.querySelector(".link-contacto");
 
-btnMenu.addEventListener("click", () => {
-    btnMenu.classList.toggle("abierto");
+
+function cerrarMenu (){
+  btnMenu.classList.toggle("abierto");
     navLinks.classList.toggle("abierto");
     links.forEach(link => {
       link.classList.toggle("fade");
     });
     activoEN.classList.toggle("fade");
     activoES.classList.toggle("fade");
+}
+
+
+btnMenu.addEventListener("click", () => {
+    cerrarMenu()
 });
 
 linkHeader.addEventListener("click", () => {
-    navLinks.classList.toggle("abierto");
-    links.forEach(link => {
-      link.classList.toggle("fade");
-    });
+    cerrarMenu()
 });
 
 linkSobreMi.addEventListener("click", () => {
-  navLinks.classList.toggle("abierto");
-  links.forEach(link => {
-    link.classList.toggle("fade");
-  });
+    cerrarMenu()
 });
 
 linkServicios.addEventListener("click", () => {
-  navLinks.classList.toggle("abierto");
-  links.forEach(link => {
-    link.classList.toggle("fade");
-  });
+    cerrarMenu()
 });
 
 linkProyectos.addEventListener("click", () => {
-  navLinks.classList.toggle("abierto");
-  links.forEach(link => {
-    link.classList.toggle("fade");
-  });
+    cerrarMenu()
 });
 
 linkContacto.addEventListener("click", () => {
-  navLinks.classList.toggle("abierto");
-  links.forEach(link => {
-    link.classList.toggle("fade");
-  });
+    cerrarMenu()
 });
 
 //animacion porcentajes
